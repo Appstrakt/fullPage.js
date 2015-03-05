@@ -239,8 +239,10 @@
 		};
 
 		FP.resetSlider = function(section) {
-			var slides = section.find('.slide');
-			landscapeScroll(slide, slide.eq(0));
+			var slides = section.find('.fp-slides');
+			var slide = slides.find('.fp-slide').eq(0);
+
+			landscapeScroll(slides, slide);
 		}
 
 		/**

@@ -238,6 +238,11 @@
 			moveSlide('prev');
 		};
 
+		FP.resetSlider = function(section) {
+			var slides = section.find('.slide');
+			landscapeScroll(slide, slide.eq(0));
+		}
+
 		/**
 		 * When resizing is finished, we adjust the slides sizes and positions
 		 */
